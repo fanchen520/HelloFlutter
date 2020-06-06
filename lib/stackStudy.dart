@@ -24,6 +24,7 @@ class ScreenBody extends StatelessWidget {
           alignment: Alignment.center,
           children: <Widget>[
             Positioned(
+              left: 50,
               child: Icon(
                 Icons.home,
                 size: 40,
@@ -38,6 +39,7 @@ class ScreenBody extends StatelessWidget {
               ),
             ),
             Positioned(
+              right: 50,
               child: Icon(
                 Icons.shopping_cart,
                 size: 40,

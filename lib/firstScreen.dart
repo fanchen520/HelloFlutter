@@ -3,6 +3,8 @@ import 'padding.dart';
 import 'customContainer.dart';
 import 'waterfallFlow.dart';
 import 'stackStudy.dart';
+import 'wrapWidget.dart';
+import 'cardWidget.dart';
 
 class FirstScreen extends StatelessWidget {
   @override
@@ -31,6 +33,18 @@ class FirstScreen extends StatelessWidget {
           title: Text('Stack'),
           onTap:(){
             Navigator.push(context, new MaterialPageRoute(builder: (context) => new StackStudy()));
+          },
+        ),
+        ListTile(
+          title: Text('Wrap'),
+          onTap:(){
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new WrapWidget()));
+          },
+        ),
+        ListTile(
+          title: Text('Card'),
+          onTap:(){
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new CardWidget()));
           },
         )
       ],
