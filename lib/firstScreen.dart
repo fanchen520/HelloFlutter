@@ -5,6 +5,7 @@ import 'waterfallFlow.dart';
 import 'stackStudy.dart';
 import 'wrapWidget.dart';
 import 'cardWidget.dart';
+import 'changeWidget.dart';
 
 class FirstScreen extends StatelessWidget {
   @override
@@ -45,6 +46,12 @@ class FirstScreen extends StatelessWidget {
           title: Text('Card'),
           onTap:(){
             Navigator.push(context, new MaterialPageRoute(builder: (context) => new CardWidget()));
+          },
+        ),
+        ListTile(
+          title: Text('change widget'),
+          onTap:(){
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new ChangeWidget()));
           },
         )
       ],
